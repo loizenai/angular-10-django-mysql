@@ -85,3 +85,11 @@ Here is a list of goals for Angular 10 Django CRUD Example with Django Rest Fram
 – Delete a Customer:
 
 ![Delete a Customer](https://loizenai.com/wp-content/uploads/2020/07/Goal-5-Angular-Client-delete-a-Customer-entity.png)
+
+
+Related posts:
+
+- [Angular Nodejs Fullstack CRUD Application with MySQL/PostgreSQL](https://loizenai.com/angular-nodejs-fullstack-crud-application-with-mysql-postgresql-angular-10-9-8-httpclient-client-nodejs-express-sequelize-orm/)
+- [Angular & Nodejs JWT Authentication fullstack Example](https://loizenai.com/angular-nodejs-jwt-authentication-examples-tutorials/)
+- [Angular CRUD Application with SpringBoot and MySQL/PostgreSQL RestAPIs](https://loizenai.com/angular-crud-application-with-springboot-and-mysql-postgresql-restapis-fullstack-angular-httpclient-post-get-put-delete/)
+- [Angular Spring Boot JWT Authentication Example](https://loizenai.com/angular-spring-boot-jwt-authentication-example-angular-6-8-9-spring-security-mysql-postgresql/)
