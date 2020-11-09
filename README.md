@@ -1,27 +1,87 @@
-# AngularHttpclient
+# Django Angular 10 CRUD Example – MySQL + Django Rest Framework Tutorial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+Tutorial Link: [Django Angular 10 CRUD Example – MySQL + Django Rest Framework Tutorial](https://loizenai.com/angular-10-django-mysql-rest-crud-api-example/)
 
-## Development server
+![Django Angular 10 CRUD Example – MySQL + Django Rest Framework Tutorial](https://loizenai.com/wp-content/uploads/2020/07/Django-Angular-10-CRUD-Example-%E2%80%93-Fullstack-Angular-10-Django-Rest-Framework-MySQL-Tutorial.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Django is a Python-based free and open-source web framework that follows the model-template-view architectural pattern. Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google. In the tutorial, I introduce how to build a Angular Django CRUD RestAPIs Fullstack Project with POST/GET/PUT/DELETE requests using Django Rest Framework and MySQL database with step by step coding examples.
 
-## Code scaffolding
+## Architecture – Angular Django CRUD Application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Overall Architecture – Angular Django RestAPIs FullStack Integration](https://loizenai.com/wp-content/uploads/2020/07/Overall-Architecture-Angular-Django-RestAPIs-FullStack-Integration.png)
 
-## Build
+- We build the backend Python Django Application that provides RestAPIs for POST/GET/PUT/DELETE Customer entities and store them in MySQL/PostgreSQL database.
+- We implement the Angular CRUD Application that uses Angular HTTPClient to interact (call/receive requests) with Django backend’s RestAPIs and display corresponding page views in Browser
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## DJANGO APPLICATION WITH DJANGO REST FRAMEWORK + MYSQL
 
-## Running unit tests
+- Django Application interacts with MySQL/PostgreSQL database via Model layers.
+- The Views are simply Python functions that take web requests and return web responses.
+- URLs are used to mapping each request with the corresponding views.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![DJANGO APPLICATION WITH DJANGO REST FRAMEWORK + MYSQL](https://loizenai.com/wp-content/uploads/2020/07/Django-RestAPIs-Workflow-Architecture.png)
 
-## Running end-to-end tests
+## Django Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![Django Project structure](https://loizenai.com/wp-content/uploads/2020/07/Django-Project-Structure.png)
 
-## Further help
+The Django RestAPIs project includes 2 folders:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- djangoLoiZenAiRestAPIs is a main project folder
+- customers is an application folder
+
+## Angular Frontend Architecture
+
+![Angular Frontend Architecture](https://loizenai.com/wp-content/uploads/2020/07/Angular-Application-Architecture.png)
+
+Angular CRUD Application is designed with 3 main layers:
+
+- Service Layer is used to define Angular Common Services and HttpClient Services to interact with RestAPIs
+- Component Layer is used to define Angular Components to show views in Browser for interacting with Users
+- Router Layer is used to route URLs mapping with the corresponding Angular Components
+
+## Angular Project Structure
+
+![https://loizenai.com/wp-content/uploads/2020/07/Angular-Project-Structure-1.png](https://loizenai.com/wp-content/uploads/2020/07/Angular-Project-Structure-1.png)
+
+Angular CRUD Application defines 3 components, 2 services, 1 routers, and 2 data models:
+
+– Components:
+
+add-customer component is used to add a new customer to system
+list-customer component is used to show all customers on view pages, delete a customer and update a customer
+message component is used to define a view to show logging message on browser
+– Services:
+
+customer.service.ts defines POST/GET/PUT/DELETE HTTP requests to Django RestAPIs with the built-in Angular HttpClient.
+message.service.ts defines an array storage to log all messages when Angular CRUD App running
+– Router: app-routing.module.ts defines how to map a corresponding Angular component with an URL.
+
+– Models:
+
+customer.ts defines the main data model of our application.
+message.ts defines the response data model between Django RestAPIs and Angular application.
+
+## Goal
+
+Here is a list of goals for Angular 10 Django CRUD Example with Django Rest Framework and MySQL database:
+
+– Add a Customer Entities from Angular Client:
+
+![Goal 1 – Add a Customer Entity](https://loizenai.com/wp-content/uploads/2020/07/Goal-1-Add-a-Customer-Entity.png)
+
+– List All Customer’s entities:
+
+![Goal 2 – List All Customer’s entities from Angular Client](https://loizenai.com/wp-content/uploads/2020/07/List-All-Customers-entities-from-Angular-Client.png)
+
+– Details a Customer:
+
+![Goal 3 – Angular shows details of a Customer entity](https://loizenai.com/wp-content/uploads/2020/07/Angular-shows-details-of-a-Customer-entity.png)
+
+– Update a Customer:
+
+![Goal 4 – Angular update a Customer Entity](https://loizenai.com/wp-content/uploads/2020/07/Angular-Client-Update-a-Customer-Entity.png)
+
+– Delete a Customer:
+
+![Delete a Customer](https://loizenai.com/wp-content/uploads/2020/07/Goal-5-Angular-Client-delete-a-Customer-entity.png)
